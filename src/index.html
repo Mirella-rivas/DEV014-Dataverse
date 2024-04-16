@@ -13,6 +13,10 @@
   </header>
   <main>
     <h2> </h2>
+    <div id="controles">
+
+  
+
     <label for="filter"> Filtrar por :</label>
     <select id="filter" data-testid="select-filter" name="intereses">
       <option value=""></option>
@@ -21,6 +25,19 @@
       <option value="Música">Música</option>
       <option value="Libros">Libros</option>
     </select>
+
+    <label for="order"> Ordenar por :</label>
+    <select id="order" data-testid="select-sort" name="alfabeto">
+      <option value=""></option>
+      <option value="asc">A Z</option>
+      <option value="desc">Z A</option>
+    </select>
+    </div>
+
+    <div id="estadistica">
+    <button id= "calcular" >PROMEDIO DE APARICIONES:</button>
+    </div>
+
 
     <div id="root"> </div>
   </main>

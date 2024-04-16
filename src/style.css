@@ -2,15 +2,33 @@ html {
     background-image: linear-gradient(to bottom right, #d9d5f4, #d1Add1);
 }
 
+header {
+    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYndhbGxuZ3dvMm8zbWlydXN6MmtuZmdscmNpbzNvc3VmbmptM3l6ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1368cjuhRQBOak/giphy.gif');
+  background-size: 100% 100%;; /* Ajusta el tamaño del fondo para cubrir el contenedor */
+  background-position: center bottom; /* Coloca el fondo centrado y debajo del contenido */
+  text-align: center; /* Centra el contenido horizontalmente */
+  height: 100px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 h1 {
     color: #412441;
-    font-size: 60 px;
+    font-size: 50 px;
     font-style: italic;
-    margin-top: 50px;
-    /*cuando le pongo esto, permanece el titulo*/
+    margin-top: 50px; /*cuando le pongo esto, permanece el titulo*/
     margin-bottom: 20px;
+    padding: 30px;
     text-align: center;
 }
+
+h2 {
+    margin-top: 0;
+    padding-top: 0;
+     padding-bottom: 0;
+   }
 
 ul {
     /* el flex se coloca en el ul*/
@@ -28,12 +46,20 @@ ul {
     border-radius: 8px;
     box-shadow: 0 4PX 8px rgba(0, 0, 0, 1.8);
     padding: 20px;
-    width: calc(25% - 20px);
+    width: calc(25% - 2vw);  /*aca antes era 25%-20px*/
     margin: 10px;
     display: flex;
     /*estudiar el DISPLAY*/
     justify-content: center;
     align-items: center;
+}
+
+/*esto de stiloLi img agregue de maria */
+.stiloLi img {
+    max-width: 100%; /*  ancho de la imagen */
+    height: auto; /*  altura */
+    box-sizing: border-box; /*  márgenes y rellenos en el ancho y la altura */
+    border-radius: 3px;
 }
 
 img {
@@ -49,3 +75,45 @@ h2 {
     margin-top: 60px;
     margin-bottom: 20px;
 }
+#controles {
+    color: #EBDEEF;
+    background-color: #412474;
+    width: 1320px;
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 3px;
+}
+label[for="filter"] {
+    font-family: Verdana;
+    font-size: 20px;
+}
+label[for="order"] {
+    font-family: Verdana;
+    font-size: 20px;
+}
+#estadística {
+    color: #412474;
+    padding-top: 50px;
+}
+#calcular
+{
+    color: black;
+}
+/*
+P#resultado {
+    margin-top: 10px;
+    font-size: 16px;
+    color: blue;
+}
+*/
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) 
+    ul{
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    
+      li {
+
+      }

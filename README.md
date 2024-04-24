@@ -36,6 +36,35 @@ usuarias, al lado derecho.
 
 ## 2. Resumen del proyecto
 
+Hemos desarrollado una interfaz de una Pagina Web para visualizar un conjunto de datos a travéz de tarjetas que hemos generado con prompting con el apoyo de inteligencia artificial.
+
+Así mismo, como entregable final del proyecto, creamos una página web dedicada a la serie "GILMORE GIRL", 
+donde los usuarios pueden visualizar tarjetas de los personajes, asi como filtrar, ordenar y calcular estadísticas.
+
+La evalución de nuestro proyecto se ejecutó a lo largo de 4 sprint.
+
+EL PENSAMIENTO DE DISEÑO
+
+IMAGENNNNNNNNNN
+
+IDENTIFICAR:
+Tenemos de Material de apoyo Cuatro Hitos, Los cuales hemos seguido al pie de la letra, y nos han servido al máximo como guía para el desarrollo total.  
+
+INVESTIGAR:
+Tambien hemos investigado algunas funcionalidades que fueron utilizadas en el desarrollo de los Controles del Proyecto.
+
+IDEAR:
+Para la parte de Idear, hemos pensado en diferentes temáticas para el desarrollo del proyecto. Sin embargo, nos aconsejaron que para el desarrollo del próximo proyecto, sería más acorde escoger una temática de personajes.
+
+PROTOTIPAR:
+Hemos desarrollado el prototipo de nuestro proyecto Gilmore Girl a través de FIGMA. 
+Así mismo diseñamos el prototipo de la visualización del proyecto en Mobile
+
+PROBAR:
+Desarrollamos finalmente el diseño total de la página. Además, hemos desarrollado unos test unitarios para probar las funcionlidades aplicadas.
+
+
+
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que vas a generar con [prompting](https://www.itmadrid.com/que-es-un-prompt-en-inteligencia-artificial-ia/).
 Esta página web se adecuará a lo que descubras que tu usuaria

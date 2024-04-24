@@ -7,9 +7,28 @@ const root = document.querySelector('#root');
 const estadistica = document.getElementById('estadistica')
 const selectFilter = document.getElementById('filter')  // Select con id filter
 const selectOrder = document.getElementById("order")
+const resetButton = document.querySelector('#resetButton')
 const buttonCalcular = document.getElementById('calcular') //Estadistica
 
+const nav= document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+//MENU HAMBURGUESA
+/*document.querySelector('.menu-icon').addEventListener('click', function() {
+  document.querySelector('#menu-content').classList.toggle('show');
+});*/
+
+abrir.addEventListener("click", function() {
+  nav.classList.add("visible");
+});
+
+cerrar.addEventListener("click", function() {
+  nav.classList.toggle("visible");
+})
+
 let dataFiltrada = data;
+
 const resultRenderItems = renderItems(dataFiltrada)
 root.appendChild(resultRenderItems);
 
@@ -18,7 +37,7 @@ selectFilter.addEventListener('change', function (event) {
   console.log('event target value es valor de select: ', event.target.value)
 
   //ejecutar función filterData             FILTER DATA - AQUÍ SE UTILIZA
-  const dataFiltrada = filterData(data, 'intereses', event.target.value);
+  dataFiltrada = filterData(data, 'intereses', event.target.value);
   console.log('ver lo que retorna filterData: ', dataFiltrada)
 
   // chat gpt Eliminar las tarjetas actuales del DOM
@@ -43,15 +62,37 @@ selectOrder.addEventListener("change", function(event){
   root.appendChild(cardsOrdenados)
 });
 
+//BOTON DE LIMPIAR
+resetButton.addEventListener('click', function () {
+
+  selectFilter.value = ''; 
+  selectOrder.value = ''; 
+  root.innerHTML = '';
+  const cardsOriginales = renderItems(data);
+  root.appendChild(cardsOriginales);
+});
+
 //ESTADÍSTICA
+let resultadoElement = null; // Variable global para mantener una referencia al elemento del resultado
+
+
 buttonCalcular.addEventListener('click', function (){
   const resultado = computeStats(data);
-  console.log(resultado)
-  // Muestra el resultado en un elemento del DOM
-  const resultadoElement = document.createElement('p');
-  resultadoElement.textContent = `El promedio de número de apariciones es: ${resultado.mean}`;
-  /*resultadoElement.setAttribute('id', 'resultado');  Asignar un id al elemento */
-  estadistica.appendChild(resultadoElement);
+  console.log(resultado);
 
+  // Si ya hay un resultado impreso, elimínalo
+  if (resultadoElement) {
+    resultadoElement.remove();
+    resultadoElement = null; // Restablecer la referencia a null
+  } else {
+
+    // Muestra el resultado en un elemento del DOM
+    resultadoElement = document.createElement('p');
+    resultadoElement.textContent = `El promedio de número de apariciones es: ${resultado.mean}`;
+    /*resultadoElement.setAttribute('id', 'resultado');  Asignar un id al elemento */
+    estadistica.appendChild(resultadoElement);
+  }
 });
+
 //selectCalcular.textContent="El resultado es: " + dataFunction.computeStats(data);
+

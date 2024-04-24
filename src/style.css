@@ -3,32 +3,44 @@ html {
 }
 
 header {
-    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYndhbGxuZ3dvMm8zbWlydXN6MmtuZmdscmNpbzNvc3VmbmptM3l6ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1368cjuhRQBOak/giphy.gif');
-  background-size: 100% 100%;; /* Ajusta el tamaño del fondo para cubrir el contenedor */
-  background-position: center bottom; /* Coloca el fondo centrado y debajo del contenido */
-  text-align: center; /* Centra el contenido horizontalmente */
-  height: 100px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
+
+    background-size: 100% 100%;
+    ;
+    /* Ajusta el tamaño del fondo para cubrir el contenedor */
+    background-position: center bottom;
+    /* Coloca el fondo centrado y debajo del contenido */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    height: 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 h1 {
-    color: #412441;
-    font-size: 50 px;
-    font-style: italic;
-    margin-top: 50px; /*cuando le pongo esto, permanece el titulo*/
-    margin-bottom: 20px;
-    padding: 30px;
+    color: white;
+    font-size: 50px;
+    margin: -20px;
+    padding: 40px;
     text-align: center;
+    background-image: url("imagen/cafe.jpg");
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+
 }
 
-h2 {
-    margin-top: 0;
-    padding-top: 0;
-     padding-bottom: 0;
-   }
+body {
+
+    font-family: "Cormorant Garamond", serif;
+    /*google fonts*/
+    font-weight: 400;
+    /*google fonts*/
+    font-style: normal;
+    /*google fonts*/
+    font-size: 18px;
+}
 
 ul {
     /* el flex se coloca en el ul*/
@@ -38,28 +50,34 @@ ul {
     padding: 20px;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .stiloLi {
-    color: black;
-    background-color: #ebdeef;
+    width: 250px;
+    color: white;
+    background-color: rgba(179, 124, 61, 0.8);;
     border-radius: 8px;
     box-shadow: 0 4PX 8px rgba(0, 0, 0, 1.8);
     padding: 20px;
-    width: calc(25% - 2vw);  /*aca antes era 25%-20px*/
     margin: 10px;
     display: flex;
     /*estudiar el DISPLAY*/
     justify-content: center;
     align-items: center;
+    
 }
 
 /*esto de stiloLi img agregue de maria */
 .stiloLi img {
-    max-width: 100%; /*  ancho de la imagen */
-    height: auto; /*  altura */
-    box-sizing: border-box; /*  márgenes y rellenos en el ancho y la altura */
+    max-width: 100%;
+    /*  ancho de la imagen */
+    height: auto;
+    /*  altura */
+    box-sizing: border-box;
+    /*  márgenes y rellenos en el ancho y la altura */
     border-radius: 3px;
+
 }
 
 img {
@@ -67,38 +85,60 @@ img {
     height: 220px;
 }
 
-h2 {
-    display: block;
-    color: #412441;
-    font-size: 60 px;
-    font-style: italic;
-    margin-top: 60px;
-    margin-bottom: 20px;
+
+
+select {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-#controles {
-    color: #EBDEEF;
-    background-color: #412474;
-    width: 1320px;
-    height: 40px;
-    padding-left: 40px;
-    border-radius: 3px;
+
+#filter {
+
+    margin-right: 20px;
+    /* Espacio entre los selectores */
+    margin-left: 5px;
+
 }
+
+#order {
+    margin-right: 30px;
+}
+
+#root {
+    background-image: url("imagen/fondo.jpg");
+    margin-top: -18px;
+}
+
 label[for="filter"] {
-    font-family: Verdana;
+
     font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 5px;
+    /*google fonts*/
+    font-style: normal;
+    /*google fonts*/
 }
+
 label[for="order"] {
     font-family: Verdana;
     font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 5px;
+    /*google fonts*/
+    font-style: normal;
+    /*google fonts*/
+
 }
+
 #estadística {
     color: #412474;
     padding-top: 50px;
+
 }
-#calcular
-{
-    color: black;
+
+#calcular {
+    font-family: "Cormorant Garamond", serif;
 }
+
 /*
 P#resultado {
     margin-top: 10px;
@@ -107,13 +147,95 @@ P#resultado {
 }
 */
 
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 768px) 
-    ul{
-        flex-wrap: wrap;
-        align-items: center;
-      }
-    
-      li {
+footer {
+    background-color: #B29C7A;
+    border-radius: 70px;
+    color: white;
+}
 
-      }
+#estadistica{
+    background-color: #B29C7A;
+}
+
+/* Estilos para dispositivos móviles */
+#menu-content {
+    display: none;
+    /* Oculta el contenido del menú por defecto */
+}
+
+.menu-icon {
+    display: none;
+    /* Muestra el icono de hamburguesa en pantallas pequeñas */
+    cursor: pointer;
+}
+
+
+
+#controles {
+    color: #EBDEEF;
+    background-color: #B29C7A;
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 3px;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 575px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .nav {
+        /*position: absolute;*/
+        visibility: hidden;
+        flex-direction: column;
+        align-items: flex-end;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 10px;
+        position: fixed;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        width: 250px;
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    #controles {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0px;
+        justify-content: space-evenly;
+        height: 45vh;
+        background-color: rgba(145, 84, 142, 0.2);
+    }
+    ul {
+        padding: 0;
+    }
+
+    .abrir-menu{
+        color: #fffafa;
+    }
+    .cerrar-menu{
+        color: #ececec;
+    }
+}

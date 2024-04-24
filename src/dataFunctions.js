@@ -1,6 +1,6 @@
 export function filterData(data, filterBy, value) {   //FILTER DATA - AQUI SE DEFINE
 
-  if (!data || !filterBy || !value) return "Faltan definir prámetros"
+  if (!data || !filterBy || !value) return "Faltan definir parametros"
 
   let resultadoFiltro = []
 

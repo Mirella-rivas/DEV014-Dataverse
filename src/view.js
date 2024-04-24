@@ -5,12 +5,12 @@ export const renderItems = (data) => {
   data.forEach(personajes => {
 
     const elementli = document.createElement('li');
-    elementli.classList.add("stiloLi") 
+    elementli.classList.add("stiloLi"); 
 
     // CREAR MI DL [DT-DD]
     const dlpersonajes = document.createElement('dl');  //list definition
-    dlpersonajes.setAttribute("itemtype", "Girlmore Girls Serie");
-    dlpersonajes.setAttribute("itemscope",""); 
+    elementli.setAttribute("itemtype", "personajes");
+    elementli.setAttribute("itemscope",""); 
 
     //IMG
     const img =document.createElement('img');
@@ -46,7 +46,7 @@ export const renderItems = (data) => {
 
     elementli.appendChild(dlpersonajes);
 
-    elementUl.appendChild(elementli)
+    elementUl.appendChild(elementli);
 
   });
  
